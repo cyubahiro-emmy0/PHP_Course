@@ -107,7 +107,7 @@
                 case ($marks >= 30 && $marks <= 39):
                     $grade = 'S';
                     break;
-                default: // below 30
+                default: //below 30
                     $grade = 'U';
                     break;
             }

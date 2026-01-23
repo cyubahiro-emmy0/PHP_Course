@@ -34,10 +34,10 @@
 
 <form method="post">
     <label for="num1">First Number:</label>
-    <input type="number" name="num1" class = "form-input" value="<?php echo $_POST['num1'] ?? ''; ?>" required><br><br>
+    <input type="number" step="any" name="num1" class = "form-input" value="<?php echo $_POST['num1'] ?? ''; ?>" required><br><br>
 
     <label for="num2">Second Number:</label>
-    <input type="number" name="num2" class ="form-input"  value="<?php echo $_POST['num2'] ?? ''; ?>" required><br><br>
+    <input type="number" step="any" name="num2" class ="form-input"  value="<?php echo $_POST['num2'] ?? ''; ?>" required><br><br>
 
     <label for="result">Result:</label>
     <input type="text" name="result" class="form-input"
@@ -51,8 +51,8 @@
 
 <?php
 if (isset($_POST['operator'])) {
-    $num1 = $_POST['num1'];
-    $num2 = $_POST['num2'];
+    $num1 = (float) $_POST['num1'];
+    $num2 = (float) $_POST['num2'];
     $op = $_POST['operator'];
     $result = "";
 
