@@ -9,15 +9,21 @@
             margin: 5px 0;
             border: 1px solid #3b4dd8;
             border-radius: 4px;
-            box-sizing: border-box; /* Ensures padding/border are included in the width */
+            box-sizing: border-box; 
             font-size: 16px;
         }
 
         label{
             font-size:20px;
         }
-        input [type="submit"]{
+        .form{
+           width: 200px;
+            padding: 10px;
+            margin: 5px 0;
             background-color:green;
+            border-radius: 4px;
+            box-sizing: border-box; 
+            font-size: 16px;
         }
 
     </style>
@@ -37,10 +43,10 @@
     <input type="text" name="result" class="form-input"
            value="<?php echo $_POST['result'] ?? ''; ?>" readonly><br><br>
 
-    <input type="submit" name="operator" value="+">
-    <input type="submit" name="operator" value="-">
-    <input type="submit" name="operator" value="*">
-    <input type="submit" name="operator" value="/">
+    <input type="submit" name="operator" value="+" class="form">
+    <input type="submit" name="operator" value="-" class="form">
+    <input type="submit" name="operator" value="*" class="form">
+    <input type="submit" name="operator" value="/" class="form">
 </form>
 
 <?php
