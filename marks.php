@@ -77,14 +77,13 @@
     if (isset($_POST['submit'])) {
         $percentage = floatval($_POST['percentage']);
 
-        // Basic validation
         if ($percentage < 0 || $percentage > 100) {
             echo '<div class="error">Error: Percentage must be between 0 and 100.</div>';
         } else {
-            // Remove decimal part for switch (as per typical grade rules)
+           
             $marks = (int)floor($percentage);
 
-            // Determine grade using switch
+            
             switch (true) {
                 case ($marks >= 90 && $marks <= 100):
                     $grade = 'A';
