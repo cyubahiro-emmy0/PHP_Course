@@ -3,9 +3,9 @@
 <head>
     <title>Alphabet H - Compact</title>
     <style>
-        pre {
+        * {
             font-family: monospace;
-            font-size: 18px;
+            font-size: 50px;
             line-height: 1;
         }
     </style>
